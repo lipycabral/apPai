@@ -14,7 +14,7 @@ export default class ListarReserva extends Component {
         return (
             <View style={styles.item}>
                 <Text>Cliente: {reserva.cliente}</Text>
-                <Text>Data: {dataCompleta.getDate() < 10 ? '0'+dataCompleta.getDate():dataCompleta.getDate()}/{dataCompleta.getMonth() < 10 ? '0'+dataCompleta.getMonth():dataCompleta.getMonth()}/{dataCompleta.getFullYear()}</Text>
+                <Text>Data: {dataCompleta.getDate() < 10 ? '0'+dataCompleta.getDate():dataCompleta.getDate()}/{dataCompleta.getMonth() < 10 ? '0'+(dataCompleta.getMonth()+1):dataCompleta.getMonth()+1}/{dataCompleta.getFullYear()}</Text>
                 <Text>Dia da semana: {diaSemana[dataCompleta.getDay()]}</Text>
                 <Text>Horário da festa: {dataCompleta.getHours() < 10 ? '0' + dataCompleta.getHours():dataCompleta.getHours()}:{dataCompleta.getMinutes() < 10 ? '0'+dataCompleta.getMinutes():dataCompleta.getMinutes()}</Text>
             </View>

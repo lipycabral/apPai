@@ -1,4 +1,4 @@
-package com.mobileappai;
+package com.tiosaneventos;
 
 import android.app.Application;
 

@@ -32,6 +32,42 @@ const ReservaSchema = new mongoose.Schema({
         type: Number,
         default: 0
     },
+    qtBatataFrita:{
+        type: Number,
+        default: 0
+    },
+    qtSalgados:{
+        type: Number,
+        default: 0
+    },
+    qtRefrigerante:{
+        type: Number,
+        default: 0
+    },
+    qtBobo:{
+        type: Number,
+        default: 0
+    },
+    qtRisotoPato:{
+        type: Number,
+        default: 0
+    },
+    qtRisotoCarneiro:{
+        type: Number,
+        default: 0
+    },
+    qtEstrogonofeCarne:{
+        type: Number,
+        default: 0
+    },
+    qtEstrogonofeFrango:{
+        type: Number,
+        default: 0
+    },
+    qtEscondidinhoCarne:{
+        type: Number,
+        default: 0
+    },
 })
 
 module.exports = mongoose.model('Reserva', ReservaSchema)
